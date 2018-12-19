@@ -1,0 +1,111 @@
+1. CREATE TABLE
+CREATE TABLE "Manager" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `manager_name` TEXT )
+CREATE TABLE `Karyawan` ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `NIK` INTEGER, `nama_depan` TEXT, `nama_belakang` TEXT, `jenis_kelamin` TEXT, `email` TEXT, `phone_number` TEXT )
+CREATE TABLE `Project` ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `project_name` TEXT )
+create table Departemen (
+	department_name TEXT(50),
+	manager_id INT,
+	employee_id INT
+);
+create table ProjectEmployee (
+	project_id INT,
+	employee_id INT
+);
+
+
+2. INSERT DATA
+INSERT INTO Manager (manager_name) VALUES ("Taqi")
+INSERT INTO Manager (manager_name) VALUES ("Anhar")
+INSERT INTO Manager (manager_name) VALUES ("Atras")
+INSERT INTO Manager (manager_name) VALUES ("Kevin")
+INSERT INTO Manager (manager_name) VALUES ("Patria")
+INSERT INTO Manager (manager_name) VALUES ("Rangga")
+INSERT INTO Manager (manager_name) VALUES ("Januar")
+INSERT INTO Manager (manager_name) VALUES ("Desy")
+INSERT INTO Manager (manager_name) VALUES ("Wika")
+INSERT INTO Manager (manager_name) VALUES ("Joni")
+
+insert into ProjectEmployee (project_id, employee_id) values (1, 1);
+insert into ProjectEmployee (project_id, employee_id) values (2, 2);
+insert into ProjectEmployee (project_id, employee_id) values (3, 3);
+insert into ProjectEmployee (project_id, employee_id) values (4, 4);
+insert into ProjectEmployee (project_id, employee_id) values (5, 5);
+insert into ProjectEmployee (project_id, employee_id) values (6, 6);
+insert into ProjectEmployee (project_id, employee_id) values (7, 7);
+insert into ProjectEmployee (project_id, employee_id) values (8, 8);
+insert into ProjectEmployee (project_id, employee_id) values (9, 9);
+insert into ProjectEmployee (project_id, employee_id) values (10, 10);
+insert into ProjectEmployee (project_id, employee_id) values (11, 11);
+insert into ProjectEmployee (project_id, employee_id) values (12, 12);
+insert into ProjectEmployee (project_id, employee_id) values (13, 13);
+insert into ProjectEmployee (project_id, employee_id) values (14, 14);
+insert into ProjectEmployee (project_id, employee_id) values (15, 15);
+
+insert into Departemen (department_name, manager_id, employee_id) values ('Engineering', 1, 1);
+insert into Departemen (department_name, manager_id, employee_id) values ('Support', 2, 2);
+insert into Departemen (department_name, manager_id, employee_id) values ('Legal', 3, 3);
+insert into Departemen (department_name, manager_id, employee_id) values ('Marketing', 4, 4);
+insert into Departemen (department_name, manager_id, employee_id) values ('Support', 5, 5);
+insert into Departemen (department_name, manager_id, employee_id) values ('Training', 6, 6);
+insert into Departemen (department_name, manager_id, employee_id) values ('Engineering', 7, 7);
+insert into Departemen (department_name, manager_id, employee_id) values ('Sales', 8, 8);
+insert into Departemen (department_name, manager_id, employee_id) values ('Marketing', 9, 9);
+insert into Departemen (department_name, manager_id, employee_id) values ('Sales', 10, 10);
+insert into Departemen (department_name, manager_id, employee_id) values ('Accounting', 11, 11);
+insert into Departemen (department_name, manager_id, employee_id) values ('Services', 12, 12);
+insert into Departemen (department_name, manager_id, employee_id) values ('Support', 13, 13);
+insert into Departemen (department_name, manager_id, employee_id) values ('Training', 14, 14);
+insert into Departemen (department_name, manager_id, employee_id) values ('Services', 15, 15);
+
+insert into Project (project_name) values ('Salsalate');
+insert into Project (project_name) values ('Aconitum e tub. 6 Special Order');
+insert into Project (project_name) values ('Captopril');
+insert into Project (project_name) values ('dextran 70 and hypromellose 2910');
+insert into Project (project_name) values ('eucalyptol, menthol, methyl salicylate, thymol');
+insert into Project (project_name) values ('diazepam');
+insert into Project (project_name) values ('TRICLOSAN');
+insert into Project (project_name) values ('Cefuroxime axetil');
+insert into Project (project_name) values ('Ethyl Alcohol');
+insert into Project (project_name) values ('BENZALKONIUM CHLORIDE, LIDOCAINE, BACITRACIN ZINC, NEOMYCIN SULFATE, POLYMYXIN B SULFATE, WATER, BENZOCAINE, ALCOHOL, IBUPROFEN, ACETAMINOPHEN, ASPIRIN, ISOPROPYL ALCOHOL');
+insert into Project (project_name) values ('indomethacin');
+insert into Project (project_name) values ('Allium sativum, Anacardium orientale, Apis mellifica, Gambogia, Mercurius solubilis, Natrum carbonicum, Nitricum acidum, Nux vomica, Phosphorus, Pulsatilla, Sulphur');
+insert into Project (project_name) values ('sodium iodide i 131');
+insert into Project (project_name) values ('FEXOFENADINE AND PSEUDOEPHEDRINE');
+insert into Project (project_name) values ('SODIUM MONOFLUOROPHOSPHATE');
+
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (1, 'Serena', 'Lowseley', 'Female', 'slowseley0@mit.edu', '229-664-8531');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (2, 'Price', 'Ladewig', 'Male', 'pladewig1@dropbox.com', '801-985-8367');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (3, 'Arvy', 'Jiggens', 'Male', 'ajiggens2@1688.com', '544-792-6100');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (4, 'Clive', 'Laurenz', 'Male', 'claurenz3@harvard.edu', '589-643-7129');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (5, 'Ring', 'Simmins', 'Male', 'rsimmins4@prlog.org', '378-814-2035');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (6, 'Tobin', 'Nutbeam', 'Male', 'tnutbeam5@buzzfeed.com', '158-498-5591');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (7, 'Georgiana', 'Scrinage', 'Female', 'gscrinage6@spiegel.de', '237-614-5003');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (8, 'Dunstan', 'Jowett', 'Male', 'djowett7@wikispaces.com', '971-240-0089');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (9, 'Maribeth', 'Syplus', 'Female', 'msyplus8@pbs.org', '802-500-4958');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (10, 'Symon', 'Pridgeon', 'Male', 'spridgeon9@netlog.com', '791-735-0844');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (11, 'Ingaborg', 'Polfer', 'Female', 'ipolfera@aol.com', '293-445-4826');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (12, 'Danny', 'Buckett', 'Male', 'dbuckettb@wufoo.com', '458-716-1550');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (13, 'Cinda', 'Howbrook', 'Female', 'chowbrookc@hud.gov', '270-864-6199');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (14, 'Dahlia', 'Stagg', 'Female', 'dstaggd@livejournal.com', '420-469-8041');
+insert into Karyawan (NIK, nama_depan, nama_belakang, jenis_kelamin, email, phone_number) values (15, 'Lurlene', 'Flewin', 'Female', 'lflewine@homestead.com', '767-757-1243');
+
+3. UPDATE DATA 
+UPDATE Manager SET manager_name = "Tantri" WHERE id = 1
+UPDATE Project SET project_name = "Plutonium" WHERE id = 2
+UPDATE Karyawan SET nama_depan = "butet", nama_belakang = "Naiborhu" WHERE id = 1
+
+4. DELETE DATA
+DELETE FROM Manager WHERE id = 1
+DELETE FROM Project WHERE id = 1
+DELETE FROM Karyawan WHERE nama_depan = "butet"
+
+5. QUERY UNTUK MENGETAHUI MANAGER MEMBAWAHU DEPARTEMENT APA SAJA
+SELECT * FROM Departemen JOIN Manager ON Departemen.manager_id = Manager.id
+
+6. QUERY UNTUK MENGETAHUI 1 KARYAWAN MENGERJAKAN PROJECT APA SAJA
+SELECT Karyawan.nama_depan, Project.project_name FROM Karyawan JOIN ProjectEmployee ON Karyawan.id = ProjectEmployee.project_id JOIN Project ON ProjectEmployee.project_id = Project.id
+
+7. QUERY UNTUK MENGETAHUI 1 PROJECT DIKERJAKAN OLEH KARYAWAN YANG MANA SAJA
+SELECT Project.project_name, Karyawan.nama_depan FROM ProjectEmployee JOIN Karyawan ON ProjectEmployee.employee_id = Karyawan.id 
+JOIN Project ON ProjectEmployee.project_id = Project.id
+
